@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  background-image: url(img/background.jpg);
+}
+header img {
+  display: flex;
+  width: 40px;
+  height: 40px;
+}
+header {
+  display: flex;
+  padding: 25px 40px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+header h1,
+header p {
+  margin: 0;
+}
+header p {
+  align-self: flex-end;
+  font-size: 13px;
+  font-weight: 600;
+  color: #b6b6b6;
+}
+main {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  padding: 50px 100px;
+  align-items: center;
+}
+.spacer {
+  width: 1px;
+  display: none;
+  background-color: rgb(192, 92, 92);
+}
+.mainRow {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.career-path {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 25%;
+  color: white;
+  padding: 15px 15px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 8px;
+  background-color: rgb(129, 129, 129);
+}
+.career-path p {
+  margin: 0;
+}
+.career-path h2 {
+  margin: 0;
+  padding: 10px 0px;
+}
+#frontend {
+  background-image: url(img/htmlCode.jpg);
+}
+.frontendLink {
+  display: flex;
+}
+.career-path a {
+  color: rgb(185, 0, 185);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.career-path a:hover {
+  color: rgb(109, 0, 109);
+}
