@@ -2,33 +2,106 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: rgb(46, 19, 41);
   background-image: url(img/background.jpg);
+  background-size: contain;
+  font-family: Inter;
+}
+a {
+  text-decoration: none;
+  color: white;
 }
 header img {
   display: flex;
   width: 40px;
   height: 40px;
 }
+
+@keyframes logo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.logo {
+  animation: logo 10s linear infinite;
+}
 header {
   display: flex;
-  padding: 25px 40px;
+  padding: 0px 40px 0px 40px;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 30px;
   background-color: #333;
   color: #fff;
   text-align: center;
+  border-bottom: 1px solid rgb(119, 119, 119);
 }
-header h1,
-header p {
+.headerSeparator {
+  width: 1px;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+}
+header h1 {
   margin: 0;
 }
-header p {
-  align-self: flex-end;
-  font-size: 13px;
+.menuBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@keyframes menuButton {
+  from {
+    background-color: #333;
+  }
+  to {
+    background-color: #424242;
+  }
+}
+.menuButton {
+  padding: 20px 35px;
+  font-size: 20px;
   font-weight: 600;
-  color: #b6b6b6;
+}
+.menuButton:hover {
+  animation-name: menuButton;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.loginButtons {
+  display: flex;
+  flex: 1 0 0;
+  gap: 20px;
+  justify-content: flex-end;
+  font-size: 16px;
+  font-weight: 600;
+}
+.logIn {
+  display: flex;
+  padding: 12px;
+}
+@keyframes signIn {
+  from {
+    background-color: rgb(42, 42, 143);
+  }
+  to {
+    background-color: rgb(27, 27, 97);
+  }
+}
+.singIn {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: rgb(42, 42, 143);
+  border-radius: 8px;
+}
+.singIn:hover {
+  animation-name: signIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
 }
 main {
   display: flex;
@@ -47,14 +120,21 @@ main {
   justify-content: center;
   gap: 20px;
 }
+#frontend {
+  background-image: url(img/htmlCode.jpg);
+}
+#backend {
+  background-image: url(img/backendCode.jpg);
+}
 .career-path {
   display: flex;
   flex-direction: column;
+  box-shadow: -1px -1px 10px rgb(255, 255, 255);
   gap: 15px;
   width: 25%;
   color: white;
   padding: 15px 15px;
-  border: 2px solid rgb(255, 255, 255);
+  border: 2px solid rgb(179, 179, 179);
   border-radius: 8px;
   background-color: rgb(129, 129, 129);
 }
@@ -62,21 +142,26 @@ main {
   margin: 0;
 }
 .career-path h2 {
+  display: flex;
+  align-items: flex-start;
+  width: max-content;
+  background-color: rgba(128, 128, 128, 0.623);
   margin: 0;
-  padding: 10px 0px;
-}
-#frontend {
-  background-image: url(img/htmlCode.jpg);
+  color: rgb(255, 255, 255);
+  padding: 6px;
+  border: 1px solid white;
+  text-shadow: 1px 1px black;
+  border-radius: 8px;
 }
 .frontendLink {
   display: flex;
 }
 .career-path a {
-  color: rgb(185, 0, 185);
+  color: rgb(134, 33, 134);
   text-decoration: none;
   font-weight: bold;
+  text-shadow: 1px 1px black;
 }
-
 .career-path a:hover {
   color: rgb(109, 0, 109);
 }

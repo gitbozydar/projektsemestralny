@@ -5,15 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Platforma Edukacyjna</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
   <body>
     <header>
-      <img src="img/frame.png" alt="frame" />
+      <img src="img/frame.png" alt="frame" class="logo" />
+      <div class="headerSeparator"></div>
       <h1>Platforma Edukacyjna</h1>
-      <p>Oferująca kompleksowe możliwości rozwoju zawodowego i osobistego</p>
+      <div class="menuBar">
+        <a href="#" class="animatedMenu">
+          <div class="menuButton">Oferty pracy</div>
+        </a>
+        <a href="#" class="animatedMenu">
+          <div class="menuButton">Kursy</div>
+        </a>
+        <a href="#" class="animatedMenu">
+          <div class="menuButton">Subskrybcja</div>
+        </a>
+        <a href="#" class="animatedMenu">
+          <div class="menuButton">Aplikacja</div>
+        </a>
+      </div>
+      <div class="loginButtons">
+        <div class="logIn"><a href="#">Log In</a></div>
+        <a href="#">
+          <div class="singIn"><span>Create account </span></div>
+        </a>
+      </div>
     </header>
-
     <main>
       <div class="mainRow">
         <div class="career-path" id="backend">
@@ -23,7 +46,9 @@
             Development. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit.
           </p>
-          <a href="backend.html">Dowiedz się więcej</a>
+          <div class="learnMore">
+            <a href="#">Dowiedz się więcej</a>
+          </div>
         </div>
         <div class="career-path" id="frontend">
           <h2>Frontend Development</h2>
@@ -32,9 +57,10 @@
             Development. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit.
           </p>
-          <a href="frontend.html">Dowiedz się więcej</a>
+          <div class="learnMore">
+            <a href="#">Dowiedz się więcej</a>
+          </div>
         </div>
-
         <div class="career-path" id="fullstack">
           <h2>Full-Stack Development</h2>
           <p>
@@ -42,7 +68,9 @@
             Development. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit.
           </p>
-          <a href="fullstack.html">Dowiedz się więcej</a>
+          <div class="learnMore">
+            <a href="#">Dowiedz się więcej</a>
+          </div>
         </div>
         <div class="career-path" id="datascience">
           <h2>Data Science</h2>
@@ -50,7 +78,9 @@
             Opis ścieżki rozwoju zawodowego i osobistego dla Data Science. Lorem
             ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <a href="datascience.html">Dowiedz się więcej</a>
+          <div class="learnMore">
+            <a href="#">Dowiedz się więcej</a>
+          </div>
         </div>
       </div>
       <div class="mainRow">
@@ -60,7 +90,9 @@
             Opis ścieżki rozwoju zawodowego i osobistego dla Data Engineering.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <a href="dataengineering.html">Dowiedz się więcej</a>
+          <div class="learnMore">
+            <a href="#">Dowiedz się więcej</a>
+          </div>
         </div>
         <div class="career-path" id="dataAnalysis">
           <h2>Data Analysis</h2>
@@ -68,7 +100,9 @@
             Opis ścieżki rozwoju zawodowego i osobistego dla Data Analysis.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <a href="dataanalysis.html">Dowiedz się więcej</a>
+          <div class="learnMore">
+            <a href="#">Dowiedz się więcej</a>
+          </div>
         </div>
         <div class="career-path" id="deeplearning">
           <h2>Deep Learning</h2>
@@ -76,7 +110,9 @@
             Opis ścieżki rozwoju zawodowego i osobistego dla Deep Learning.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           </p>
-          <a href="deeplearning.html">Dowiedz się więcej</a>
+          <div class="learnMore">
+            <a href="#">Dowiedz się więcej</a>
+          </div>
         </div>
       </div>
       <!-- Dodaj więcej ścieżek kariery według potrzeb -->
