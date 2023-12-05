@@ -9,7 +9,11 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(112, 112, 112);
 }
-
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
 h2 {
   margin: 0;
   padding: 12px;
@@ -36,7 +40,7 @@ input {
   margin-right: 5px;
 }
 
-button {
+.test-button {
   background-color: #4caf50;
   color: #fff;
   padding: 10px 20px;
@@ -45,6 +49,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.test-button:hover {
   background-color: #45a049;
 }

@@ -175,7 +175,7 @@ main {
 
   box-shadow: 0 0 10px rgb(253, 253, 253);
 }
-form {
+.form-register {
   display: flex;
   flex-direction: column;
   width: 100%;
