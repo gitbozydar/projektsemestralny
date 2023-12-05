@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Diagnostyczny</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="test.css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/frame.png" alt="frame" class="logo" />
+      <div class="headerSeparator"></div>
+      <h1>Platforma Edukacyjna</h1>
+      <div class="menuBar">
+        <a href="test.html" class="animatedMenu">
+          <div class="menuButton">Test Diagnostyczny</div>
+        </a>
+        <a href="#" class="animatedMenu">
+          <div class="menuButton">Oferty pracy</div>
+        </a>
+        <a href="index.html" class="animatedMenu">
+          <div class="menuButton">Kursy</div>
+        </a>
+        <a href="#" class="animatedMenu">
+          <div class="menuButton">Subskrybcja</div>
+        </a>
+        <a href="#" class="animatedMenu">
+          <div class="menuButton">Aplikacja</div>
+        </a>
+      </div>
+      <div class="loginButtons">
+        <div class="logIn"><a href="#">Log In</a></div>
+        <a href="register.html  ">
+          <div class="singIn"><span>Create account </span></div>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="quiz-container">
+        <h2>IT Job Quiz</h2>
+        <form id="quizForm">
+            <div class="question">1. What programming languages do you enjoy working with?</div>
+            <div class="options">
+                <label><input type="radio" name="q1" value="backend">Backend (e.g., Python, Java)</label>
+                <label><input type="radio" name="q1" value="frontend">Frontend (e.g., HTML, CSS, JavaScript)</label>
+                <label><input type="radio" name="q1" value="both">Both</label>
+            </div>
+
+            <div class="question">2. What area interests you the most?</div>
+            <div class="options">
+                <label><input type="radio" name="q2" value="security">Cybersecurity</label>
+                <label><input type="radio" name="q2" value="networking">Networking</label>
+                <label><input type="radio" name="q2" value="database">Database Management</label>
+            </div>
+
+            <div class="question">3. How do you prefer to solve problems?</div>
+            <div class="options">
+                <label><input type="radio" name="q3" value="coding">Writing Code</label>
+                <label><input type="radio" name="q3" value="analyzing">Analyzing and Planning</label>
+                <label><input type="radio" name="q3" value="communicating">Communicating and Collaborating</label>
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+
+        <div id="result"></div>
+        <script src="text.js"></script>
+    </main>
+  </body>
+</html>
